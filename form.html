@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <h1 align="center">STUDENT REGISTRATION FORM</h1>
+</head>
+
+<body bgcolor="aqua" align="center">
+  <div> 
+    
+ <form>
+     
+     <label>NAME:</label>
+     <input type="text" name="uname" id="uname" placeholder="enter name"> &nbsp; &nbsp; &nbsp; &nbsp;
+     <label>FATHER NAME:</label> 
+     <input type="text" name="fname" id="fname" placeholder="enter father name"><br/><br>
+     <label>PASSWORD:</label> 
+     <input type="password" name="pwd" id="pwd" placeholder="enter password" required> &nbsp; &nbsp; &nbsp; &nbsp;
+     <label>PHONE NO:</label>
+    <input type="tel" name="phno" id="phno"  placeholder="enter-10 digit number" pattern="[0-9]{10}" required><br>
+    <br> <br>
+     <label>GENDER:</label> 
+     <input type="radio" name="gender" value="male">male 
+     <input type="radio" name="gender" value="female">female <br><br>
+
+     <label>CITY:</label>
+     <select name="dropdown" >
+         <option>select</option>
+         <option>hyderabad</option>
+        <option>guntur</option>
+        <option>ongole</option>
+        <option>anathapuram</option>
+        <option>Nellore</option>
+     </select>
+     <br/><br>
+     <label>   ADDRESS:</label><br/>
+     <textarea rows="5" cols="20" name="address" id="address"></textarea><br/><br>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email"  required><br/><br>
+        <input type="submit" name="submit" value="submit">
+        <input type="reset" name="reset" value="reset">
+ </form>
+ </div>    
+</body>
+</html>
